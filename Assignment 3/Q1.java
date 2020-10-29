@@ -45,6 +45,7 @@ class IntArray{
 	public IntArray(int size){
 
 		this.size = size;
+		
 	}
 	public void add(int element){
 

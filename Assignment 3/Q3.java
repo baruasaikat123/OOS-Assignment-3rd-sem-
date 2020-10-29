@@ -78,7 +78,6 @@ public class Q3{
 
                         	if((s[k].getRegisterNo()).equalsIgnoreCase(regi)){
 
-                        		s[k].setRegisterNo(regi);
                         		s[k].h.setHostelName(hostel); 
                         		c++;
                         		break;
@@ -111,6 +110,8 @@ public class Q3{
                         break;
 
                 case 4: exit(0);
+
+                default: out.println("Enter a valid choice.");
 			}
 		}
 	}
@@ -133,10 +134,6 @@ class Department{
 	String getDeptName(){
 
 		return deptName;
-	}
-	String getDeptHead(){
-
-		return deptHead;
 	}
 }
 class Hostel{
@@ -161,14 +158,6 @@ class Hostel{
 	String getHostelName(){
 
 		return hostelName;
-	}
-	String getHostelLocation(){
-
-		return hostelLocation;
-	}
-	int getNumberofRooms(){
-
-		return numberofRooms;
 	}
 }
 class Student{
